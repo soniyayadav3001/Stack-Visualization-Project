@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualizer using HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="StackV.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Stack Visualizer</h1>
+    </header>
+
+    <div class="container">
+        <div class="container-header">
+            <label for="stack-input">Enter Number:</label>
+            <input type="number" id="stack-input" class="text" required>
+            <button class="push" >Push</button>
+            <button class="pop" >Pop</button>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="container-body">
+            <div class="stack">
+                <div class="main-stack-bucket"></div>
+            </div>
+
+            <div class="info">
+                <div class="sec1">
+                    <h3>Top of the Stack:</h3>
+                    <button class="box" aria-label="Top of the stack"></button>
+                </div>
+                <div class="sec2">
+                    <h3>Last Pushed Item:</h3>
+                    <button class="box" aria-label="Last pushed item"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Last Popped Item:</h3>
+                    <button class="box" aria-label="Last popped item"></button>
+                </div>
+                <div class="sec4">
+                    <h3>Size of the Stack:</h3>
+                    <button class="box" aria-label="Size of the stack">5</button>
+                </div>
+
+                <div class="message-box">
+                    <h2>Message Box</h2>
+                    <div class="message" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="StackV.js"></script>
+</body>
+
+</html>
